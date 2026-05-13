@@ -1,0 +1,63 @@
+/* Andy Bell’s modern CSS reset */
+
+/* Use a more intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin from all elements */
+*:where(:not(html, iframe, canvas, img, svg, video, audio, svg *, video *, audio *)) {
+  margin: 0;
+}
+
+/* Allow percentage-based heights in the application */
+html {
+  block-size: 100%;
+  line-height: 1.15;
+  text-rendering: optimizeSpeed;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-block-size: 100%;
+  text-rendering: optimizeLegibility;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class], ol[class] {
+  list-style: none;
+}
+
+/* Anchor defaults */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-inline-size: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Make form elements easier to style */
+button, input, optgroup, select, textarea {
+  margin: 0;
+}
+
+/* Prevent text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Create a root stacking context */
+#root, #app {
+  isolation: isolate;
+}
