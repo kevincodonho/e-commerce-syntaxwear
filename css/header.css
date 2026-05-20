@@ -3,22 +3,21 @@
     top: 20px;
     left: 50%;
     transform: translate(-50%);
-    width: 1260px;
+    width: calc(100% - 40px);
     border-radius: 15px;
     z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 28px;
+    padding: 0.125rem 1.25rem;
     background-color: #ffffff;
 }
 
 .logo img{
-    height: 40px;
+    height: 48px;
 }
 
 .nav-center ul{
-    list-style: none;
     display: flex;
     gap: 2.5rem;
 }
@@ -26,15 +25,15 @@
 .nav-center a,
 .nav-right a{
     font-size: 1.25rem;
+    color: #333333;
 }
 
 .nav-center a:hover,
 .nav-right a:hover{
-    font-size: 1.25rem;
     color: #7c3aed;
 }
 
-.nav-right{
+.nav-right ul{
     display: flex;
     gap: 2.5rem;
     align-items: center;
@@ -48,23 +47,3 @@
     opacity: 0.7;
 }
 
-.nav-container{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    flex: 1;
-    margin-left: 10rem;
-}
-
-.menu-toggle{
-    display: none;
-}
-
-.menu-icon{
-    width: 30px;
-    height: 30px;
-    display: none;
-    cursor: pointer;
-    z-index: 1001;
-}
